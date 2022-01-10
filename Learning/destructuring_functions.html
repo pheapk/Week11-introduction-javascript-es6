@@ -1,0 +1,33 @@
+<script>
+  function f() {
+    return [1,2,3,4];
+  }
+  // passing return value of the array respectively
+  // based on the number of const array on the left
+
+  const [a,b] = f();
+  console.log(a); //1
+  console.log(b); //2
+
+  // user object
+  const user = { 
+    id: 209,
+    firstName: 'Petter',
+    lastName: 'Parker',
+    age: 19
+  };
+
+  // destructure the object that is being sent to it, 
+  // only takes id, the first property
+  function userId({id}){
+    return id;
+  }
+
+  function userFirstName({firstName}){
+    return firstName;
+  }
+
+  console.log(userId(user)); // 209
+  console.log(userFirstName(user)); // Petter
+
+</script>
