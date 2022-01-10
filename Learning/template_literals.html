@@ -1,0 +1,27 @@
+<script>
+  function prettyDate1 (day, dayNumber, month, year) {
+    const message = 'the date is ' +
+      day + ', ' +
+      month + ' ' +
+      dayNumber + ', ' +
+      year;    
+      
+    return message;
+  }
+
+  function prettyDate2 (day, dayNumber, month, year) {
+    // ES6 temaple literals with placeholders for expression  
+    const message = `the date is ${day}, ${month} ${dayNumber}, ${year}`;
+      
+    return message;
+  }
+
+  const day = 'thursday';
+  const dayNumber = '15';
+  const month = 'december'  ;
+  const year = '2050';
+
+  console.log(prettyDate1(day, dayNumber, month, year));
+  console.log(prettyDate2(day, dayNumber, month, year));
+
+</script>
