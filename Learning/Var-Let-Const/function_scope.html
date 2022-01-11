@@ -1,0 +1,19 @@
+<script>
+  // var age = 20; 
+  // console.log(age);
+
+  // age = 30;
+  // console.log(age);
+
+  // age = 40;
+  // console.log(age);
+
+  function userInfo(){
+    var age = 20; // removing 'var' would display age as 20 because it becomes a globle variable
+    return age;
+  }
+  console.log(userInfo());
+  console.log(age); // Uncought ReferenceError: age is not defined
+
+
+</script>

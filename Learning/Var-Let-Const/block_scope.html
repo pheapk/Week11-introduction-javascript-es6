@@ -1,0 +1,26 @@
+<script>
+  var age = 20;
+  if (age > 18) {
+    var message = 'Age is adult'; // available outside of the If block
+    let message2 = 'Age 2 is adult'; // block scope only withing the If block
+    console.log("Message: " + message);
+    console.log("Message2: " + message2);
+  }
+  console.log("Message outside of If: " + message);
+  //console.log("Message2 outside of If: " + message2);
+
+  for (var i=0; i<5; i++){
+    console.log(i);
+  }
+
+  console.log("Check i outside of the for loop: " + i);
+
+  // with let the i only available inside this for loop
+  // with var the i value will override the previous one
+  for (let i=10; i<15; i++){
+    console.log(i);
+  }
+
+  console.log("Check i outside of the for loop: " + i);
+
+</script>
