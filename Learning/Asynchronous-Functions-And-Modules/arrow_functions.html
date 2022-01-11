@@ -1,0 +1,28 @@
+<script>
+  function greeting(){
+    return 'hello';
+  }
+  console.log(greeting());
+
+  // arrow functions
+  var geeting = () => 'hello'; // for one line
+  console.log(greeting());
+
+  // with parameters
+  var add = (a, b) => a+b;
+  console.log(add(1,2)); // 3
+  
+  // numbers labels
+  var numbers = ['one', 'two', 'three'];
+
+  // classic callback
+  var output = numbers.map(function(label){
+    return label.length;
+  });
+  console.log(output); // [3, 3, 5]
+
+  // arrow callback function
+  var output = numbers.map(label => label.length);
+  console.log(output); // [3, 3, 5]
+
+</script>
