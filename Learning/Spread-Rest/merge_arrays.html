@@ -1,0 +1,16 @@
+<script>
+  let l1 = [1,2,3];
+  let l2 = [4,5,6];
+
+  let newList = [l1,l2]; // array of two arrays
+  console.log(JSON.stringify(newList)); // [[1,2,3],[4,5,6]];
+
+  let l3 = [l1,4,5,6]; 
+  let l4 = [...l1,4,5,6]; 
+  let l5 = [...l1, ...l2]; 
+
+  console.log(JSON.stringify(l3)); // [[1,2,3],4,5,6];
+  console.log(JSON.stringify(l4)); // [1,2,3,4,5,6];
+  console.log(JSON.stringify(l5)); // [1,2,3,4,5,6];
+
+</script>

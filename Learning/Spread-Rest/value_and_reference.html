@@ -1,0 +1,12 @@
+<script>
+  let numbers = [0,1,2,3,4,5];
+
+  //let mycopy = numbers; // reference original array
+  let mycopy = [...numbers]; // copy all elements
+
+  mycopy[2] = 9; // original doesn't get changed
+
+  console.log(numbers); // [0,1,2,3,4,5];
+  console.log(mycopy); //  [0,1,9,3,4,5];
+
+</script>
